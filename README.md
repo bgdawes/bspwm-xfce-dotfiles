@@ -1,6 +1,6 @@
 ## The n00b's guide to bspwm...
 
-If you are interested in tiling WM's but you're also an id10t (like me) the following guide below will walk you through setting up the best (imho) tiling WM **bspwm** to run alongside XFCE. This setup is nice for n00b id10t's because it grants you all of the great features of a tiling WM without having to sacrifice the conveniences of a DE (in this case, XFCE).
+If you are interested in tiling WM's but you're also an id10t (like me) the following guide below will walk you through setting up the best (imho) tiling WM ( **bspwm** ) to run alongside XFCE. This setup is nice for n00b id10t's because it grants you all of the great features of a tiling WM without having to sacrifice the conveniences of a DE (in this case, XFCE).
 
 ### Markdown
 
