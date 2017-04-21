@@ -5,16 +5,14 @@ If you are interested in tiling WM's but you're also an id10t (like me) the foll
 ### === Create new user: xfcebspwm ===
 
 
-You may or may not want to do this step. If you've got a good setup already, I highly recommed doing this because any tweaks/changes/modifications you make won't f' up your existing setup.
+> You may or may not want to do this step. If you've got a good setup already, I highly recommed doing this because any tweaks/changes/modifications you make won't f' up your existing setup.
 
 
-Create a new user
-
+- Create a new user
 
 `useradd -m -G wheel -s /bin/bash xfcebspwm`
 
-Add a password 
-
+- Add a password 
 
 `passwd xfcebspwm`
 
