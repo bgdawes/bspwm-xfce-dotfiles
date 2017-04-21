@@ -14,9 +14,21 @@ Add a password
 - passwd xfcebspwm
 
 ### === Set XFCE to forget user settings ===
-1. Edit file: /etc/systemd/logind.conf
-2. Uncomment line #KillUserProcesses=no and change to ‘yes’
-3. Turn off all selections in the ‘Actions Button’ item on the XFCE top panel except for ‘Log Out...’ and then be sure to uncheck ‘Save session for future log in’ otherwise XFCE will try and restart all applications you had running before log-off / reboot 
+- Edit file: /etc/systemd/logind.conf
+- Uncomment line #KillUserProcesses=no and change to ‘yes’
+- Turn off all selections in the ‘Actions Button’ item on the XFCE top panel except for ‘Log Out...’ and then be sure to uncheck ‘Save session for future log in’ otherwise XFCE will try and restart all applications you had running before log-off / reboot 
+
+### === Install bspwm, sxhkd, compton, and rofi | Make directories | Copy Dots ===
+If you're running Arch Linux, run the command below, otherwise get these packages however you have to source them according to your distribution:
+- # pacman -S bspwm sxhkd compton rofi
+
+Create the following directories
+- mkdir ~/.config/bspwm/
+- mkdir ~/.config/sxhkd/
+- mkdir ~/.config/compton/
+- mkdir ~/.config/rofi/
+
+Copy my dots to the directories you just created
 
 ```markdown
 Syntax highlighted code block
