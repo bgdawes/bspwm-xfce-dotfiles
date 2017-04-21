@@ -4,12 +4,16 @@ If you are interested in tiling WM's but you're also an id10t (like me) the foll
 
 ### === Create new user: xfcebspwm ===
 > You may or may not want to do this step. If you've got a good setup already, I highly recommed doing this because any tweaks/changes/modifications you make won't f' up your existing setup.
-- Create a new user
-1. # useradd -m -G wheel -s /bin/bash xfcebspwm
-- Add a password
-2. # passwd xfcebspwm
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Create a new user
+> # useradd -m -G wheel -s /bin/bash xfcebspwm
+Add a password
+> # passwd xfcebspwm
+
+### === Set XFCE to forget user settings ===
+1. Edit file: /etc/systemd/logind.conf
+2. Uncomment line #KillUserProcesses=no and change to ‘yes’
+3. Turn off all selections in the ‘Actions Button’ item on the XFCE top panel except for ‘Log Out...’ and then be sure to uncheck ‘Save session for future log in’ otherwise XFCE will try and restart all applications you had running before log-off / reboot 
 
 ```markdown
 Syntax highlighted code block
