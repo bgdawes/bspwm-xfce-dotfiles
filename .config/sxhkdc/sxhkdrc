@@ -1,0 +1,75 @@
+###########################
+# wm independent hotkeys
+###########################
+
+# terminal emulator
+alt + Return
+	rofi -show drun
+
+# rofi program launcher
+alt + space
+	termite
+
+# rofi program launcher
+alt + Tab
+	rofi -show window
+
+# whisker menu
+{Super_L,Super_R}
+	xfce4-popup-whiskermenu
+
+# make sxhkd reload its configuration files:
+alt + Escape
+	pkill -USR1 -x sxhkd
+
+###########################
+# bspwm hotkeys
+###########################
+
+# close window
+alt + q
+	bspc node -c
+
+# === function keys ===
+
+# rotate windows
+F1
+	bspc node @/ -R 90
+
+# circulate windows
+F2
+	bspc node @/ -C forward
+
+# flip windows horizontal
+F3
+	bspc node @/ -F horizontal
+
+# flip windows vertical
+F4
+	bspc node @/ -F vertical
+
+# alternate between the tiled and monocle layout
+F5
+	bspc desktop -l next
+
+# balance windows
+F6
+	bspc node @/ -B
+
+# Change window gap
+{F7,F8}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 2 ))
+
+# set the window state
+{F9,F10,F11,F12}
+	bspc node -t {floating,tiled,pseudo_tiled,fullscreen}
+
+# === focus/swap ===
+
+# focus the next/previous node
+alt + {Left,Right}
+	bspc node -f {next,prev}
+
+# focus the next/previous desktop
+alt + {Up,Down}
+	bspc desktop -f {prev,next}
