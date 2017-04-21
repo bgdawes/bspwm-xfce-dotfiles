@@ -9,7 +9,6 @@ If you are interested in tiling WM's but you're also an id10t (like me) the foll
 
 
 - Create a new user
-
 `useradd -m -G wheel -s /bin/bash xfcebspwm`
 
 - Add a password 
