@@ -9,6 +9,7 @@ If you are interested in tiling WM's but you're also an id10t (like me) the foll
 
 
 - Create a new user
+
 `useradd -m -G wheel -s /bin/bash xfcebspwm`
 
 - Add a password 
@@ -23,15 +24,17 @@ If you are interested in tiling WM's but you're also an id10t (like me) the foll
 - If you have a XFCE panel and have 'Actions Button' as a panel item,  turn off all selections in the ‘Actions Button’ item on the XFCE top panel except for ‘Log Out...’ and then be sure to uncheck ‘Save session for future log in’ otherwise XFCE will try and restart all applications you had running before log-off / reboot 
 
 ### === Install bspwm, sxhkd, compton, and rofi | Make directories | Copy Dots ===
-If you're running Arch Linux, run the command below, otherwise get these packages however you have to source them according to your distribution:
-- pacman -S bspwm sxhkd compton rofi
+- If you're running Arch Linux, run the command below, otherwise get these packages however you have to source them according to your distribution:
 
-Create the following directories
-- mkdir ~/.config/bspwm/
-- mkdir ~/.config/sxhkd/
-- mkdir ~/.config/compton/
-- mkdir ~/.config/rofi/
+`pacman -S bspwm sxhkd compton rofi`
 
-Copy my dots to the directories you just created
+- Create the following directories
+
+`mkdir ~/.config/bspwm/`
+`mkdir ~/.config/sxhkd/`
+`mkdir ~/.config/compton/`
+`mkdir ~/.config/rofi/`
+
+- Copy dotfiles to the directories you just created
 
 
