@@ -11,7 +11,7 @@ Create a new user
 - useradd -m -G wheel -s /bin/bash xfcebspwm
 
 Add a password 
-- (root) passwd xfcebspwm
+- passwd xfcebspwm
 
 ### === Set XFCE to forget user settings ===
 1. Edit file: /etc/systemd/logind.conf
