@@ -20,7 +20,7 @@ Add a password
 
 ### === Install bspwm, sxhkd, compton, and rofi | Make directories | Copy Dots ===
 If you're running Arch Linux, run the command below, otherwise get these packages however you have to source them according to your distribution:
-- # pacman -S bspwm sxhkd compton rofi
+- pacman -S bspwm sxhkd compton rofi
 
 Create the following directories
 - mkdir ~/.config/bspwm/
