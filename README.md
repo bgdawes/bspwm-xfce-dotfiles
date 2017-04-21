@@ -5,13 +5,11 @@ If you are interested in tiling WM's but you're also an id10t (like me) the foll
 ### === Create new user: xfcebspwm ===
 > You may or may not want to do this step. If you've got a good setup already, I highly recommed doing this because any tweaks/changes/modifications you make won't f' up your existing setup.
 
-Execute the follwing commands as root:
-
 Create a new user
-- useradd -m -G wheel -s /bin/bash xfcebspwm
+    # useradd -m -G wheel -s /bin/bash xfcebspwm
 
 Add a password 
-- passwd xfcebspwm
+    # passwd xfcebspwm
 
 ### === Set XFCE to forget user settings ===
 - Edit file: /etc/systemd/logind.conf
