@@ -31,8 +31,11 @@ If you are interested in tiling WM's but you're also an id10t (like me) the foll
 - Create the following directories
 
 `mkdir ~/.config/bspwm/`
+
 `mkdir ~/.config/sxhkd/`
+
 `mkdir ~/.config/compton/`
+
 `mkdir ~/.config/rofi/`
 
 - Copy dotfiles to the directories you just created
