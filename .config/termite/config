@@ -7,7 +7,9 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Misc Tamsyn Regular 12
+#font = Misc Tamsyn Regular 12
+font = Hack Regular 10
+#font = Luculent 10
 scrollback_lines = 10000
 search_wrap = true
 #icon_name = terminal
@@ -32,45 +34,44 @@ filter_unmatched_urls = true
 #modify_other_keys = false
 
 [colors]
-
+# Colors selected from terminal.sexy scheme /collection/x-dotshare with foreground et al changed to #00FF00
 # special
-foreground      = #d0d0d0
-foreground_bold = #d0d0d0
-cursor          = #d0d0d0
-background      = #000000
+foreground      = #00FF00
+foreground_bold = #00FF00
+cursor          = #00FF00
+background      = #151515
 
 # black
-color0  = #000000
-color8  = #808080
+color0  = #101010
+color8  = #404040
 
 # red
-color1  = #ff0000
-color9  = #ff0000
+color1  = #e84f4f
+color9  = #d23d3d
 
 # green
-color2  = #33ff00
-color10 = #33ff00
+color2  = #b8d68c
+color10 = #a0cf5d
 
 # yellow
-color3  = #ff0099
-color11 = #ff0099
+color3  = #e1aa5d
+color11 = #f39d21
 
 # blue
-color4  = #0066ff
-color12 = #0066ff
+color4  = #7dc1cf
+color12 = #4e9fb1
 
 # magenta
-color5  = #cc00ff
-color13 = #cc00ff
+color5  = #9b64fb
+color13 = #8542ff
 
 # cyan
-color6  = #00ffff
-color14 = #00ffff
+color6  = #6d878d
+color14 = #42717b
 
 # white
-color7  = #d0d0d0
-color15 = #ffffff
-
+color7  = #dddddd
+color15 = #dddddd
 
 [hints]
 #font = Monospace 12
