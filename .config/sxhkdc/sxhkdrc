@@ -3,12 +3,12 @@
 ###########################
 
 # terminal emulator
-alt + Return
-	rofi -show drun
-
-# rofi program launcher
 alt + space
 	termite
+
+# rofi program launcher
+alt + Return
+	rofi -show drun
 
 # rofi program launcher
 alt + Tab
@@ -18,13 +18,21 @@ alt + Tab
 {Super_L,Super_R}
 	xfce4-popup-whiskermenu
 
-# make sxhkd reload its configuration files:
-alt + Escape
-	pkill -USR1 -x sxhkd
+# run docky
+alt + d
+	docky
+
+# run docky
+alt + shift + d
+	pkill docky
 
 ###########################
 # bspwm hotkeys
 ###########################
+
+# make sxhkd reload its configuration files:
+alt + Escape
+	pkill -USR1 -x sxhkd
 
 # close window
 alt + q
@@ -67,9 +75,9 @@ F6
 # === focus/swap ===
 
 # focus the next/previous node
-alt + {Left,Right}
-	bspc node -f {next,prev}
+alt + {Up,Down}
+	bspc node -f {prev,next}.local.!above
 
 # focus the next/previous desktop
-alt + {Up,Down}
+alt + {Left,Right}
 	bspc desktop -f {prev,next}
