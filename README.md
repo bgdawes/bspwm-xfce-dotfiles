@@ -94,7 +94,10 @@ There are a lot of resources out there to understand how this file works. For me
 - bspc config pointer_action1 resize_corner
 - bspc config pointer_action3 move
 
-The other settings I have in this file set the number of workspaces, window paddings, etc.
+The other settings I have in this file set the number of workspaces, window padding, etc.
+Lastly, I also like having a dock. I use [Docky](http://wiki.go-docky.com/index.php?title=Welcome_to_the_Docky_wiki). In order to set Docky to appear above all other windows, I set this rule:
+
+`bspc rule -a Docky layer=above manage=on border=off`
 
 ### sxhkd | sxhkdrc
 sxhkd is great and it's also really easy to use. You assign a keybinding on one line and then in the line below, you indent, and then list the action you want to execute after pressing that keybinding. After reloading the config file (assigned to alt + Escape in my config file) the command will work or it won't. If it doesn't, something is wrong with the action you want to execute or there is a keybinding conflict.
