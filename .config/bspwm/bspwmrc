@@ -22,4 +22,5 @@ bspc config pointer_action1 resize_side
 bspc config pointer_action1 resize_corner
 bspc config pointer_action3 move
 
-bspc rule -a Docky layer=above manage=on border=off
+bspc rule -a Docky layer=above manage=on border=off focus=off locked=on
+bspc rule -a xfce4-notes floating=on
