@@ -38,6 +38,10 @@ alt + Escape
 alt + q
 	bspc node -c
 
+# move focused window to the next workspace and then switch to that workspace
+alt + shift + {Left,Right}
+	id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
+
 # === function keys ===
 
 # rotate windows
