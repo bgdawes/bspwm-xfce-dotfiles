@@ -26,6 +26,10 @@ alt + f
 alt + i
 	firefox
 
+# tellico
+alt + t
+	tellico
+
 ###########################
 # bspwm hotkeys
 ###########################
@@ -41,6 +45,10 @@ alt + q
 # move focused window to the next workspace and then switch to that workspace
 alt + shift + {Left,Right}
 	id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
+
+# set the node flag to private
+#alt + p
+#bspc node -g private
 
 # === function keys ===
 
