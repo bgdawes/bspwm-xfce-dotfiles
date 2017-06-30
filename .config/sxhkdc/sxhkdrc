@@ -18,13 +18,13 @@ alt + Tab
 {Super_L,Super_R}
 	xfce4-popup-whiskermenu
 
-# run docky
-alt + d
-	docky
+# thunar
+alt + f
+	thunar
 
-# run docky
-alt + shift + d
-	pkill docky
+# firefox
+alt + i
+	firefox
 
 ###########################
 # bspwm hotkeys
