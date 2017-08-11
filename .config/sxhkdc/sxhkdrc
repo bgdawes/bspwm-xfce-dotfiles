@@ -34,9 +34,13 @@ alt + t
 # bspwm hotkeys
 ###########################
 
-# make sxhkd reload its configuration files:
+# make sxhkd reload its configuration files
 alt + Escape
 	pkill -USR1 -x sxhkd
+
+# reload bspwmrc configuration file
+alt + b
+	pkill docky; /home/xfcebspwm/.config/bspwm/bspwmrc; docky
 
 # close window
 alt + q
