@@ -18,9 +18,13 @@ bspc config gapless_monocle      false
 bspc config focus_follows_pointer true
 
 bspc config pointer_modifier mod1
-bspc config pointer_action1 resize_side
-bspc config pointer_action1 resize_corner
-bspc config pointer_action3 move
+bspc config pointer_action3 resize_side
+bspc config pointer_action3 resize_corner
+bspc config pointer_action1 move
 
 bspc rule -a Docky layer=above manage=on border=off focus=off locked=on
 bspc rule -a xfce4-notes floating=on
+bspc rule -a Firefox desktop=^1 follow=on
+bspc rule -a tellico desktop=^2 follow=on
+bspc rule -a quassel desktop=^6 follow=on
+bspc rule -a deluge desktop=^7 follow=on
