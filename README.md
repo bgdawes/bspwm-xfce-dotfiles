@@ -174,24 +174,28 @@ bspwm uses roman numerals to name workspaces. I like this naming convention. To 
 
 I was a little confused about CaSe sensitivity respective to bspwmrc and sxhkdrc when launching applications. [I asked about this on the bspwm subreddit](https://www.reddit.com/r/bspwm/comments/6sqw66/case_sensitivity_bspwmrc_and_sxhkdrc/) and received a very helpful response:
 
-`From what i know, in the sxhkdrc file you use the same command that you use when starting the application. In my case for example, that could be firefox or firefox-esr. But, in the bspwmrc I use the the output of xprop second "WM_CLASS(STRING)". In my case, that's Firefox-esr.
+`From what i know, in the sxhkdrc file you use the same command that you use when starting the application. In my case for`
+`example, that could be firefox or firefox-esr. But, in the bspwmrc I use the the output of xprop second "WM_CLASS(STRING)". In my`
+`case, that's Firefox-esr.`
 
-Or, with libreoffice, I would put libreoffice or loffice in the sxhkd file but i have
+`Or, with libreoffice, I would put libreoffice or loffice in the sxhkd file but i have`
 
-bspc rule -a libreoffice-startcenter desktop=^3
+`bspc rule -a libreoffice-startcenter desktop=^3`
 
-in my bspwmrc since that's the output from xprop.
+`in my bspwmrc since that's the output from xprop.`
 
-If you don't know about xprop, type xprop in the terminal and select the a window. The last string after "WM_CLASS(STRING)" is what I put in bspwmrc. On firefox, xprop says this for eaxmple:
+`If you don't know about xprop, type xprop in the terminal and select the a window. The last string after "WM_CLASS(STRING)" is`
+`what I put in bspwmrc. On firefox, xprop says this for eaxmple:`
 
-WM_CLASS(STRING) = "Navigator", "Firefox-esr"
+`WM_CLASS(STRING) = "Navigator", "Firefox-esr"`
 
-(It's the same when excluding shadows or changing opacity for specifik aplications with compton btw. You have to use the output from xprop. "urxvt" or "firefox-esr" won't work. It has to be Firefox-esr or URxvt.
+`(It's the same when excluding shadows or changing opacity for specifik aplications with compton btw. You have to use the output`
+`from xprop. "urxvt" or "firefox-esr" won't work. It has to be Firefox-esr or URxvt.`
 
-Hope that helps :)
+`Hope that helps :)`
 
-(Btw, if you want to start a GUI app from the terminal without terminal output and so on (and don't use rofi), put something like
+`(Btw, if you want to start a GUI app from the terminal without terminal output and so on (and don't use rofi), put something like`
 
-alias gimp='((gimp > /dev/null 2>&1)&)'
+`alias gimp='((gimp > /dev/null 2>&1)&)'`
 
-in your .bash_aliases file.)`
+`in your .bash_aliases file.)`
