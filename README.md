@@ -171,3 +171,7 @@ The only elements I really adjusted here were 'font' and '[colors]'. For font, s
 
 ## Additional notes
 bspwm uses roman numerals to name workspaces. I like this naming convention. To adjust this setting, open XFCE's settings manager, select workspaces, adjust the number of workspaces to match the number of workspaces you have defined in your bspwmrc file and rename them with roman numerals by simply clicking the 'workspace' name.
+
+I was a little confused about CaSe sensitivity respective to bspwmrc and sxhkdrc when launching applications. [I asked about this on the bspwm subreddit](https://www.reddit.com/r/bspwm/comments/6sqw66/case_sensitivity_bspwmrc_and_sxhkdrc/) and received a very helpful response:
+
+
