@@ -129,31 +129,21 @@ And some hotkeys to cycle through windows on a workspace:
 ### compton | compton.conf
 I honestly don't know what 90% of the shit in this config file even does, the most important part of this file (for me) was to set inactive window transparency. I wanted to set all 'unfocused' windows to be transparent. To do this, I had to adjust the opacity settings:
 
-`#################################`
+`#################################`  
+`#`  
+`# Opacity`  
+`#`  
+`#################################`  
+`menu-opacity = 1;`  
+`inactive-window-opacity = 1;`  
+`inactive-opacity = 0.60;`  
+`active-opacity = 1;`  
+`frame-opacity = 1;`  
 
-`#`
+I also had to make sure these settings equaled 'false':  
 
-`# Opacity`
-
-`#`
-
-`#################################`
-
-`menu-opacity = 1;`
-
-`inactive-window-opacity = 1;`
-
-`inactive-opacity = 0.60;`
-
-`active-opacity = 1;`
-
-`frame-opacity = 1;`
-
-I also had to make sure these settings equaled 'false':
-
-`mark-wmwin-focused = false;`
-
-`mark-ovredir-focused = false;`
+`mark-wmwin-focused = false;`  
+`mark-ovredir-focused = false;`  
 
 ### rofi | config
 I really only use rofi to switch windows. 
