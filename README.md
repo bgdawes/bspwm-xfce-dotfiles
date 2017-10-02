@@ -57,7 +57,9 @@ bspwm relies on sxhkd to manipulate windows via assigned key bindings. sxhkd is 
 `mkdir ~/.config/rofi/`
 
 - Copy dotfiles to the directories you just created
+
 **IMPORTANT: MAKE SURE YOUR bspwmrc FILE IS EXECUTABLE - THIS IS THE BIGGEST ROOKIE MISTAKE**
+
 `chmod +x ~/.config/bspwm/bspwmrc`   
 
 ## Deactivate xfwm4
